@@ -1,0 +1,68 @@
+body {
+    font-family: Roboto, Helvetica Neue, sans-serif;
+    /* max-width: 460px;
+    float: none !important;
+    margin: 0 auto !important; */
+}
+
+.merchant-heading {
+    color: black;
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+}
+
+.heading {
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.merchant-button {
+    color: black;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 0%;
+}
+
+.button {
+    background-color: rgb(248, 245, 245);
+    border-style: solid;
+    border-color: black;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.form-elegant .font-small {
+    font-size: 0.8rem;
+}
+
+.form-elegant .z-depth-1a {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25);
+    box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25);
+}
+
+.form-elegant .z-depth-1-half,
+.form-elegant .btn:hover {
+    -webkit-box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15);
+    box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15);
+}
+
+.form-elegant .modal-header {
+    border-bottom: none;
+}
+
+.modal-dialog .form-elegant .btn .fab {
+    color: #2196f3!important;
+}
+
+.form-elegant .modal-body,
+.form-elegant .modal-footer {
+    font-weight: 400;
+}
+
+.info {
+    font-size: calc(12px + .1vw)
+}

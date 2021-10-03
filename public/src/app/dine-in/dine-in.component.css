@@ -1,0 +1,273 @@
+body {
+    font-family: Roboto, Helvetica Neue, sans-serif;
+    /* max-width: 460px;
+    float: none !important;
+    margin: 0 auto !important; */
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1400px) {
+    .sidenav {
+        left: 40px;
+    }
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    font-size: calc(12px + .8vw);
+}
+
+.sidenav a:hover {
+    color: #333131;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        background-color: #333;
+        overflow: auto;
+        white-space: nowrap;
+    }
+    .sidenav a {
+        font-size: 18px;
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+    }
+    .sidenav a:hover {
+        background-color: #777;
+    }
+}
+
+.block {
+    background-color: white;
+    display: inline-block;
+}
+
+.mr-auto {
+    padding-left: 0%;
+    margin: 0%;
+    top: -10px;
+}
+
+li>hr {
+    width: 100%;
+    margin-top: 0%;
+    margin-bottom: 0.5em;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+tr>hr {
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 0%;
+}
+
+thead>tr>th {
+    left: -30px;
+    padding-left: 0%;
+    margin-left: 0%;
+    font-size: calc(12px + 1.5vw);
+    margin-top: 0%;
+    margin-bottom: 0.5em;
+}
+
+.active {
+    font-size: calc(12px + .8vw);
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    padding-right: 0%
+}
+
+.merchant-Timings {
+    padding-left: 2%;
+    padding-bottom: 0%;
+    position: relative;
+    top: -10px;
+}
+
+.flexbox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search {
+    margin: 0px;
+}
+
+.search>div {
+    display: inline-block;
+    position: relative;
+    filter: drop-shadow(0 1px black);
+}
+
+.search>div:after {
+    content: "";
+    background: rgb(7, 7, 7);
+    width: 4px;
+    height: 15px;
+    position: absolute;
+    top: 22px;
+    right: 0px;
+    transform: rotate(140deg);
+}
+
+.search>div>input {
+    color: rgb(7, 7, 7);
+    font-size: 16px;
+    background: rgb(244, 245, 247);
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border: solid 3px rgb(12, 12, 12);
+    outline: none;
+    border-radius: 35px;
+    transition: width 0.5s;
+}
+
+.search>div>input::placeholder {
+    color: #0f0f0f;
+    opacity: 0;
+    transition: opacity 150ms ease-out;
+}
+
+.search>div>input:focus::placeholder {
+    opacity: 1;
+}
+
+.search>div>input:focus,
+.search>div>input:not(:placeholder-shown) {
+    width: calc(155px + 2vw);
+}
+
+.nav-item1 {
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-right: 0%;
+    margin-right: 0%;
+}
+
+.nav-item2 {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.nav-item3 {
+    margin-right: 24px;
+    margin-left: 0px;
+}
+
+.navbar {
+    max-height: 100px;
+}
+
+.navbtn.active,
+.navbtn:hover {
+    background-color: #666;
+    color: white;
+}
+
+.rate {
+    float: center !important;
+    height: 60px;
+    align-items: center;
+    text-align: center
+}
+
+.rate:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
+}
+
+.rate:not(:checked)>label {
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 55px;
+    color: #ccc;
+}
+
+.rate:not(:checked)>label:before {
+    content: '★ ';
+}
+
+.rate>input:checked~label {
+    color: #ffc700;
+}
+
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+    color: #deb217;
+}
+
+.rate>input:checked+label:hover,
+.rate>input:checked+label:hover~label,
+.rate>input:checked~label:hover,
+.rate>input:checked~label:hover~label,
+.rate>label:hover~input:checked~label {
+    color: #c59b08;
+}
+
+.note {
+    align-items: center;
+    text-align: center;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.note>p {
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.question {
+    align-items: center;
+    text-align: center;
+}
+
+.modal-header {
+    height: 100px;
+}

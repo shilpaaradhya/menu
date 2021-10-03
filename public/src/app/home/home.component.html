@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container ng-star-inserted">
+        <div class="row">
+            <div class="col">
+                <div class="desktop-view">
+                    <router-outlet></router-outlet>
+                    <div class="overview-wrapper">
+                        <div class="container overview mb-2" style="padding-top: 8.62vh;">
+                            <div class="row">
+                                <div class="col align-items-center" style="display: flex; flex-direction: column;">
+                                    <div><img class="img-responsive center-block" src="https://flogginimages.s3.ap-south-1.amazonaws.com/outlets/outlets_218_1605695927.7922137.png" alt="Blue Waters"></div>
+                                    <div class="mt-4">
+                                        <p class="merchant-heading"> Welcome to<br><span class="heading">Blue Waters!</span></p>
+                                    </div>
+                                    <div>
+                                        <p class="info"> Select your order type below to view the menu.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-overview">
+                            <div class="row ng-star-inserted">
+                                <div class="col px-4 master-wrapper" style="display: flex;justify-content: center;">
+                                    <div class="button" href="javascript:void(0)" type="button" data-toggle="modal" data-target="#modalLRForm">
+                                        <p class="merchant-button">VIEW DINE-IN MENU</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row ng-star-inserted">
+                                <div class="col px-4 master-wrapper" style="display: flex; justify-content: center;">
+                                </div>
+                            </div>
+                            <div class="row ng-star-inserted">
+                                <div class="col px-4 master-wrapper" style="display: flex; justify-content: center;">
+
+                                </div>
+                            </div>
+                            <div class="row ng-star-inserted">
+                                <div class="col px-4 master-wrapper" style="display: flex; justify-content: center;">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog" role="document">
+            <!--Content-->
+            <div class="modal-content form-elegant">
+                <!--Header-->
+                <div class="modal-header text-center">
+                    <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel"><strong>GUEST REGISTER</strong></h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+                </div>
+
+                <div class="modal-body mx-4">
+                    <div class="row mb-5">
+                        <div class="col">
+                            <p class="note mb-2">Please leave your details to help us with contact tracing efforts. Your data is secure with us.</p>
+                        </div>
+                    </div>
+                    <form class="form-horizontal " #user="ngForm">
+                        <div class="form-row">
+                            <div class="form-group col">
+                                <div class="input-group mb-2"><input type="text" name="name" placeholder="Your full name" aria-label="Full Name" aria-describedby="full-name" autocomplete="on" class="form-control ng-untouched ng-pristine ng-invalid" [(ngModel)]="enteredValue.name"
+                                        #name="ngModel" [ngModelOptions]="{standalone: true}" required="required">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col">
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"> +91 </div>
+                                    </div><input type="text" phone="phone" placeholder="Your Phone Number" aria-label="Phone-No" aria-describedby="Phone-No" autocomplete="on" class="form-control ng-untouched ng-pristine ng-invalid" [(ngModel)]="enteredValue.phone"
+                                        #phone="ngModel" [ngModelOptions]="{standalone: true}" required="required">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col">
+                                <div class="input-group mb-2"><input type="text" email="email" placeholder="Your email" aria-label="Email" aria-describedby="Email" autocomplete="on" class="form-control ng-untouched ng-pristine ng-invalid" [(ngModel)]="enteredValue.email" #email="ngModel"
+                                        [ngModelOptions]="{standalone: true}" required="required">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mb-3">
+                            <button type="button" class="btn btn-dark" [disabled]="!user.form.valid" (click)="onClick()">Register</button>
+                        </div>
+                        <div class="text-center mb-3">
+                            <button type="button" class="btn btn-dark" (click)="onClickCancel()">Cancel and Proceed</button>
+                        </div>
+                    </form>
+                </div>
+                <!--Footer-->
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+
+</body>
+
+</html>
