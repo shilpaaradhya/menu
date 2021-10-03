@@ -1,0 +1,8 @@
+@media only screen and (max-device-width: 480px) {}
+
+body {
+    font-family: Roboto, Helvetica Neue, sans-serif;
+    max-width: 460px;
+    float: none !important;
+    margin: 0 auto !important;
+}

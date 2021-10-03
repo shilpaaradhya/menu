@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target="#mySidenav" data-offset="50">
+    <div class="container-fluid">
+        <div class="desktop-view">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+                <a class="navbtnheader" href="javascript:void(0)">Food</a>
+                <hr>
+                <li> <a (click)="toquickBites()" class="navbtn">Quick Bites</a>
+                    <hr>
+                </li>
+
+                <li> <a (click)="tovegSandwich()" class="navbtn"> Quick Bites-Veg Sandwich</a>
+                    <hr>
+                </li>
+                <li> <a (click)="tononvegSandwich()" class="navbtn">Quick Bites-Non Veg Sandwich</a>
+                    <hr>
+                </li>
+                <li> <a (click)="tohotBeverages()" class="navbtn">Hot Beverages</a>
+                    <hr>
+                </li>
+                <li> <a (click)="tocoldBeverages()" class="navbtn">Cold Beverages</a>
+                    <hr>
+                </li>
+                <li> <a (click)="tostarterVeg()" class="navbtn">Starter Menu Veg</a>
+                    <hr>
+                </li>
+                <li> <a (click)="toSalad()" class="navbtn">Salad & Raita</a>
+                    <hr> </li>
+                <li> <a (click)="toSeaFoodStarters()" class="navbtn">Sea Food-Starters</a>
+                    <hr> </li>
+                <li> <a (click)="toSeaFoodStarters()" class="navbtn">Sea Food-Starters</a>
+                    <hr> </li>
+                <li> <a (click)="toSeaFoodStarters()" class="navbtn">Sea Food-Starters</a>
+                    <hr> </li>
+                <li> <a (click)="toSeaFoodStarters()" class="navbtn">Sea Food-Starters</a>
+                    <hr> </li>
+            </div>
+
+            <div id="mySidenav1" class="sidenav" style="background-color: black; color:white ">
+                <a href="javascript:void(0)" style="color: white;" class="closebtn" (click)="closeTimings()">&times;</a>
+                <div class="more-list ng-star-inserted">
+                    <div class="container-fluid mt-5">
+                        <div class="row">
+                            <div class="col">
+                                <p class="merchant-name">Blue Waters</p>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <p class="modal-title">Opening hours</p>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <div class="opening-hours">
+                                    <table class="table table-borderless table-sm" style="color:rgb(212, 206, 206)">
+                                        <tbody>
+                                            <tr class="ng-star-inserted">
+                                                <th scope="row">Monday</th>
+                                                <td>
+                                                    <p class="ng-star-inserted">10:00 AM - 11:30 PM</p>
+                                                    <!---->
+                                                </td>
+                                            </tr>
+                                            <tr class="ng-star-inserted">
+                                                <th scope="row">Tuesday</th>
+                                                <td>
+                                                    <p class="ng-star-inserted">10:00 AM - 11:30 PM</p>
+                                                    <!---->
+                                                </td>
+                                            </tr>
+                                            <tr class="ng-star-inserted">
+                                                <th scope="row">Wednesday</th>
+                                                <td>
+                                                    <p class="ng-star-inserted">10:00 AM - 11:30 PM</p>
+                                                    <!---->
+                                                </td>
+                                            </tr>
+                                            <tr class="ng-star-inserted">
+                                                <th scope="row">Thursday</th>
+                                                <td>
+                                                    <p class="ng-star-inserted">10:00 AM - 11:30 PM</p>
+                                                    <!---->
+                                                </td>
+                                            </tr>
+                                            <tr class="ng-star-inserted">
+                                                <th scope="row">Friday</th>
+                                                <td>
+                                                    <p class="ng-star-inserted">10:00 AM - 11:30 PM</p>
+                                                    <!---->
+                                                </td>
+                                            </tr>
+                                            <tr class="ng-star-inserted">
+                                                <th scope="row">Saturday</th>
+                                                <td>
+                                                    <p class="ng-star-inserted">10:00 AM - 11:30 PM</p>
+                                                    <!---->
+                                                </td>
+                                            </tr>
+                                            <tr class="ng-star-inserted">
+                                                <th scope="row">Sunday</th>
+                                                <td>
+                                                    <p class="ng-star-inserted">10:00 AM - 11:30 PM</p>
+
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more-footer pb-3">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col">
+                                    <p>Powered by <span><img src="https://flogginimages.s3.ap-south-1.amazonaws.com/assets/logo_white.png" alt="Logo" class="img-fluid" width="100" height="60"></span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="navbar navbar-default navbar-sticky border-bottom " style="background-color: rgb(102, 96, 96); overflow: hidden; position: relative">
+                <ul class="navbar-nav">
+                    <div class="merchant-Timings">
+                        <span style="font-size:30px;cursor:pointer; width:50%; object-fit: contain ;  padding-bottom: 0%" (click)="openTimings()">&#9776;  </span>
+                    </div>
+
+                    <div class="mr-auto">
+                        <div id="main" style="padding-left:0% ">
+                            <button class="btn btn-default" style="background-color: black; color: white; border-radius:40px ; max-height: 30px; width: 100% ; text-align: center; position: relative;
+                                top:-30px; padding-top: 2%;" (click)="openNav()">Menu</button>
+                        </div>
+                    </div>
+                </ul>
+                <div class="navbar-right">
+                    <ul class="navbar navbar-default navbar-fixed-top">
+                        <li class="nav-item2" href="#" role="button" aria-haspopup="true" aria-expanded="false" autofocus>
+
+                            <a class="c-header-nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" autofocus>
+                                <img src="https://img.icons8.com/color/48/000000/sorting-options.png" style='height: 50%; width: 50%; object-fit: contain ; padding-bottom: 0%;' />
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg pt-0" style="background-color:black; color: white; border:transparent ; text-align: center;">
+                                <input type="radio" id="V" name="type" value="V" [(ngModel)]="searchText" [ngModelOptions]="{standalone:true}">
+                                <label for="V" style="color:white; padding-right:5%;">Veg </label>
+                                <input type="radio" id="N" name="type" value="N" [(ngModel)]="searchText" [ngModelOptions]="{standalone:true}">
+                                <label for="N" style="color:white; padding-right: 10%;">Non-Veg</label>
+                                <a href="javascript:void(0)" style="color: white;" class="closebtn" (click)="closeFilter()">&times;</a>
+                            </div>
+                        </li>
+                        <li class="nav-item3">
+                            <form>
+                                <div class="flexbox" style="width:1vw">
+                                    <div class="search" *ngIf="showSearch">
+                                        <div>
+                                            <input autocomplete="Search . . ." type="text" placeholder="Search . . ." (click)="onClickSearch()" id="search-text" aria-describedby="search-text" [(ngModel)]="searchText" [ngModelOptions]="{standalone:true}" autofocus>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </li>
+                        <li class="nav-item1" href="#" role="button" class="button" href="javascript:void(0)" type="button" data-toggle="modal" data-target="#modalLRForm" aria-haspopup="true" aria-expanded="false">
+                            <img src="https://img.icons8.com/color/48/000000/filled-star--v1.png" style='height: 60%; width: 60%; object-fit: contain ' autofocus />
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container">
+                <router-outlet>
+
+                </router-outlet>
+                <section class="col align-items-center" style="display: flex; flex-direction: column;">
+                    <div class="col">
+                        <table class="table table-hover table-striped">
+                            <thead>
+                                <tr *ngFor="let displayItem of quickbites  | appFilter: searchText let i=index">
+                                    <th *ngIf="i == 0">Quick Bites</th>
+                                </tr>
+                            </thead>
+                            <tr *ngFor="let displayItem of quickbites  | appFilter: searchText" appHighlight [searchedWord]="searchText" [setTitle]="'true'">
+                                <td class="active">
+                                    <img src="{{displayItem.img}} " /> {{displayItem.dish}}
+                                </td>
+                                <td class="active">
+                                    {{ displayItem.price}}
+                                </td>
+                                <hr>
+                            </tr>
+                            <thead id="quickbitesVegSandwich">
+                                <tr *ngFor="let displayItem of vegpizza | appFilter: searchText let i = index">
+                                    <th *ngIf="i == 0">Quick Bites-Veg Sandwich</th>
+                                </tr>
+                            </thead>
+                            <tr *ngFor="let displayItem of vegpizza | appFilter: searchText " appHighlight [searchedWord]="searchText " [content]="c " [classToApply]=" 'font-weight-bold' " [setTitle]=" 'true' ">
+                                <td class="active ">
+                                    <img src="{{displayItem.img}} " /> {{displayItem.dish}}
+                                </td>
+                                <td class="active ">
+                                    {{ displayItem.price}}
+                                </td>
+                                <hr>
+                            </tr>
+
+                            <thead id="quickbitesNonVegSandwich">
+                                <tr *ngFor="let displayItem of nonvegpizza | appFilter: searchText  let i = index">
+                                    <th *ngIf="i == 0"> Quick Bites Non-Veg Sandwich</th>
+                                </tr>
+                            </thead>
+                            <tr *ngFor="let displayItem of nonvegpizza | appFilter: searchText " appHighlight [searchedWord]="searchText " [content]="c " [classToApply]=" 'font-weight-bold' " [setTitle]=" 'true' ">
+                                <td class="active ">
+                                    <img src="{{displayItem.img}} " /> {{displayItem.dish}}
+                                </td>
+                                <td class="active ">
+                                    {{ displayItem.price}}
+                                </td>
+                                <hr>
+                            </tr>
+                            <thead id="hotBeverages">
+                                <tr *ngFor="let displayItem of ColdBeverages | appFilter: searchText let i = index ">
+                                    <th *ngIf="i == 0"> Hot Beverages</th>
+                                </tr>
+                            </thead>
+                            <tr *ngFor="let displayItem of ColdBeverages | appFilter: searchText " appHighlight [searchedWord]="searchText " [content]="c " [classToApply]=" 'font-weight-bold' " [setTitle]=" 'true' ">
+                                <td class="active ">
+                                    <img src="{{displayItem.img}} " /> {{displayItem.dish}}
+                                </td>
+                                <td class="active ">
+                                    {{ displayItem.price}}
+                                </td>
+                                <hr>
+                            </tr>
+                            <thead id="coldBeverages">
+                                <tr *ngFor="let displayItem of HotBeverages | appFilter: searchText  let i = index">
+                                    <th *ngIf="i == 0"> Cold Beverages</th>
+                                </tr>
+                            </thead>
+                            <tr *ngFor="let displayItem of HotBeverages | appFilter: searchText " appHighlight [searchedWord]="searchText " [content]="c " [classToApply]=" 'font-weight-bold' " [setTitle]=" 'true' ">
+                                <td class="active ">
+                                    <img src="{{displayItem.img}} " /> {{displayItem.dish}}
+                                </td>
+                                <td class="active ">
+                                    {{ displayItem.price}}
+                                </td>
+                                <hr>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog" role="document">
+            <!--Content-->
+            <div class="modal-content form-elegant">
+                <!--Header-->
+                <div class="modal-header text-center" style="background-color: rgb(43, 42, 42); color: white;">
+                    <h3 class="modal-title w-100  font-weight-bold my-2" id="myModalLabel">
+                        <strong>Feedback</strong>
+                    </h3>
+                    <button style="color: white;" type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+                </div>
+                <div class="note">
+                    <p>Please take a moment to let us know how we did.</p>
+                    <p>It would mean a lot to us!</p>
+                </div>
+                <div class="rate">
+                    <input type="radio" id="star5" name="rate" value="5" rating="rating" [(ngModel)]="enteredValue.rating" #rating="ngModel" [ngModelOptions]="{standalone: true}" />
+                    <label for="star5" title="Fabulous">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" rating="rating" [(ngModel)]="enteredValue.rating" #rating="ngModel" [ngModelOptions]="{standalone: true}" />
+                    <label for="star4" title="Good">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" rating="rating" [(ngModel)]="enteredValue.rating" #rating="ngModel" [ngModelOptions]="{standalone: true}" />
+                    <label for="star3" title="Average">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" rating="rating" [(ngModel)]="enteredValue.rating" #rating="ngModel" [ngModelOptions]="{standalone: true}" />
+                    <label for="star2" title="Need to improve">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" rating="rating" [(ngModel)]="enteredValue.rating" #rating="ngModel" [ngModelOptions]="{standalone: true}" />
+                    <label for="star1" title="Poor">1 star</label>
+                </div>
+
+                <div class="modal-body mx-5" style="margin-top: 10px ; padding-bottom: 0px; margin-bottom: 0px;">
+                    <div class="row mb-5">
+                        <div class="col">
+                            <form novalidate="" role="form" class="ng-untouched ng-pristine ng-invalid">
+                                <div class="form-row">
+                                    <div class="form-group col"><label>Would you like to add anything?</label>
+                                        <div class="input-group mb-4"><textarea style="margin-bottom: 0px;" formcontrolname="comment" message="message" placeholder="Tell us about your experience. (Optional)" rows="4" aria-label="Review Comment" aria-describedby="review-comment" class="form-control ng-untouched ng-pristine ng-valid"
+                                                [(ngModel)]="enteredValue.message" #message="ngModel" [ngModelOptions]="{standalone: true}"></textarea></div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-default" style=" float:none; background-color: black; color: white; border-radius:40px ; align-items: self-position; max-height: 40px; width: 100% ; text-align: center; position: relative;
+                                 padding-top: 2%" (click)="onSubmit()"> Submit</button>
+                                <div *ngIf="showGreeting" class="question">
+                                    <p>Thank you for your Valuable Feedback! </p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
